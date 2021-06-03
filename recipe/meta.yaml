@@ -60,6 +60,7 @@ test:
   files:
     - test_data
   commands:
+    - export GDAL_ENABLE_DEPRECATED_DRIVER_GTM=YES # [not win]
     - fio --help
     - fio ls test_data/test.shp
     - fio info test_data/test.shp

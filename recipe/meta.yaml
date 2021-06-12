@@ -13,6 +13,8 @@ build:
   skip: true  # [win and vc<14]
   entry_points:
     - fio = fiona.fio.main:main_group
+  script_env:
+    - GDAL_ENABLE_DEPRECATED_DRIVER_GTM=YES # [not win]
 
 requirements:
   build:
